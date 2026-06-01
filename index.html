@@ -1,0 +1,2205 @@
+<!doctype html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>PRAISE OTUKA | Full-Stack Engineer & Creative</title>
+    <meta
+      name="description"
+      content="Portfolio of Otuka Praise Chimnaemeiheukwu — Full-Stack Software Engineer, Graphics Designer, Mobile Photographer and Video Editor. Building scalable web apps with Python (Django) and modern JavaScript."
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@500&family=Geist:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed": "var(--tertiary-fixed)",
+              "primary-fixed-dim": "var(--primary-fixed-dim)",
+              error: "var(--error)",
+              "surface-container": "var(--surface-container)",
+              "on-primary-container": "var(--on-primary-container)",
+              "on-tertiary-fixed-variant": "var(--on-tertiary-fixed-variant)",
+              "on-primary-fixed-variant": "var(--on-primary-fixed-variant)",
+              "secondary-fixed": "var(--secondary-fixed)",
+              "surface-container-low": "var(--surface-container-low)",
+              outline: "var(--outline)",
+              "inverse-on-surface": "var(--inverse-on-surface)",
+              "on-error": "var(--on-error)",
+              "surface-container-highest": "var(--surface-container-highest)",
+              "on-primary": "var(--on-primary)",
+              "surface-variant": "var(--surface-variant)",
+              "inverse-primary": "var(--inverse-primary)",
+              primary: "var(--primary)",
+              "primary-container": "var(--primary-container)",
+              "surface-dim": "var(--surface-dim)",
+              "surface-tint": "var(--surface-tint)",
+              "on-secondary-fixed": "var(--on-secondary-fixed)",
+              "surface-container-high": "var(--surface-container-high)",
+              "on-tertiary-fixed": "var(--on-tertiary-fixed)",
+              "tertiary-container": "var(--tertiary-container)",
+              secondary: "var(--secondary)",
+              "error-container": "var(--error-container)",
+              "on-secondary-fixed-variant": "var(--on-secondary-fixed-variant)",
+              tertiary: "var(--tertiary)",
+              surface: "var(--surface)",
+              "on-secondary-container": "var(--on-secondary-container)",
+              "on-primary-fixed": "var(--on-primary-fixed)",
+              "on-surface": "var(--on-surface)",
+              "secondary-fixed-dim": "var(--secondary-fixed-dim)",
+              "outline-variant": "var(--outline-variant)",
+              background: "var(--background)",
+              "inverse-surface": "var(--inverse-surface)",
+              "primary-fixed": "var(--primary-fixed)",
+              "surface-bright": "var(--surface-bright)",
+              "on-background": "var(--on-background)",
+              "secondary-container": "var(--secondary-container)",
+              "on-secondary": "var(--on-secondary)",
+              "on-tertiary": "var(--on-tertiary)",
+              "on-tertiary-container": "var(--on-tertiary-container)",
+              "surface-container-lowest": "var(--surface-container-lowest)",
+              "on-error-container": "var(--on-error-container)",
+              "tertiary-fixed-dim": "var(--tertiary-fixed-dim)",
+              "on-surface-variant": "var(--on-surface-variant)",
+            },
+            borderRadius: {
+              sm: "0.25rem",
+              DEFAULT: "0.5rem",
+              md: "0.75rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+            spacing: {
+              gutter: "24px",
+              "container-max": "1280px",
+              unit: "8px",
+              "margin-mobile": "20px",
+              "margin-desktop": "64px",
+            },
+            fontFamily: {
+              "headline-lg": ["Geist"],
+              "headline-md": ["Geist"],
+              "label-code": ["JetBrains Mono"],
+              "body-lg": ["Inter"],
+              "body-md": ["Inter"],
+              "label-caps": ["Inter"],
+              "headline-lg-mobile": ["Geist"],
+              display: ["Geist"],
+            },
+            fontSize: {
+              "headline-lg": ["40px", { lineHeight: "1.2", fontWeight: "700" }],
+              "headline-md": ["24px", { lineHeight: "1.4", fontWeight: "600" }],
+              "label-code": ["14px", { lineHeight: "1.5", fontWeight: "500" }],
+              "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+              "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+              "label-caps": [
+                "12px",
+                { lineHeight: "1", letterSpacing: "0.1em", fontWeight: "700" },
+              ],
+              "headline-lg-mobile": [
+                "32px",
+                { lineHeight: "1.2", fontWeight: "700" },
+              ],
+              display: [
+                "64px",
+                {
+                  lineHeight: "1.1",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :root {
+        --shadow-dark: rgba(0, 0, 0, 0.1);
+        --shadow-light: rgba(255, 255, 255, 0.8);
+        --glass-bg: rgba(255, 255, 255, 0.6);
+        --glass-border: rgba(0, 0, 0, 0.1);
+        --btn-bg: #ffffff;
+        --btn-hover: #f1f5f9;
+        --btn-active: #e2e8f0;
+        --bg-top: #f8fafc;
+        --bg-bottom: #e2e8f0;
+        --terminal-bg: #1e293b;
+        --terminal-border: rgba(0, 0, 0, 0.2);
+
+        --tertiary-fixed: #e2e1f1;
+        --primary-fixed-dim: #008a94;
+        --error: #ffb4ab;
+        --surface-container: #ffffff;
+        --on-primary-container: #ffffff;
+        --on-tertiary-fixed-variant: #454652;
+        --on-primary-fixed-variant: #004f54;
+        --secondary-fixed: #f8d8ff;
+        --surface-container-low: #ffffff;
+        --outline: #849495;
+        --inverse-on-surface: #283044;
+        --on-error: #690005;
+        --surface-container-highest: #ffffff;
+        --on-primary: #00363a;
+        --surface-variant: #2d3449;
+        --inverse-primary: #00696f;
+        --primary: #e1fdff;
+        --primary-container: #ffffff;
+        --surface-dim: #0b1326;
+        --surface-tint: #008a94;
+        --on-secondary-fixed: #320047;
+        --surface-container-high: #ffffff;
+        --on-tertiary-fixed: #1a1b26;
+        --tertiary-container: #ffffff;
+        --secondary: #9a24c9;
+        --error-container: #ffffff;
+        --on-secondary-fixed-variant: #74009f;
+        --tertiary: #f9f6ff;
+        --surface: #f8fafc;
+        --on-secondary-container: #ffffff;
+        --on-primary-fixed: #002022;
+        --on-surface: #0f172a;
+        --secondary-fixed-dim: #ecb2ff;
+        --outline-variant: #3a494b;
+        --background: #f8fafc;
+        --inverse-surface: #dae2fd;
+        --primary-fixed: #74f5ff;
+        --surface-bright: #31394d;
+        --on-background: #dae2fd;
+        --secondary-container: #ffffff;
+        --on-secondary: #520071;
+        --on-tertiary: #2f303b;
+        --on-tertiary-container: #ffffff;
+        --surface-container-lowest: #ffffff;
+        --on-error-container: #ffffff;
+        --tertiary-fixed-dim: #c6c5d4;
+        --on-surface-variant: #334155;
+      }
+      .dark {
+        --shadow-dark: rgba(0, 0, 0, 0.4);
+        --shadow-light: rgba(255, 255, 255, 0.05);
+        --glass-bg: rgba(255, 255, 255, 0.03);
+        --glass-border: rgba(255, 255, 255, 0.1);
+        --btn-bg: #171f33;
+        --btn-hover: #171f33;
+        --btn-active: #131b2e;
+        --bg-top: #1a1b26;
+        --bg-bottom: #0f172a;
+        --terminal-bg: rgba(5, 8, 17, 0.9);
+        --terminal-border: rgba(255, 255, 255, 0.1);
+
+        --tertiary-fixed: #e2e1f1;
+        --primary-fixed-dim: #00dbe7;
+        --error: #ffb4ab;
+        --surface-container: #171f33;
+        --on-primary-container: #006a71;
+        --on-tertiary-fixed-variant: #454652;
+        --on-primary-fixed-variant: #004f54;
+        --secondary-fixed: #f8d8ff;
+        --surface-container-low: #131b2e;
+        --outline: #849495;
+        --inverse-on-surface: #283044;
+        --on-error: #690005;
+        --surface-container-highest: #2d3449;
+        --on-primary: #00363a;
+        --surface-variant: #2d3449;
+        --inverse-primary: #00696f;
+        --primary: #e1fdff;
+        --primary-container: #00f2ff;
+        --surface-dim: #0b1326;
+        --surface-tint: #00dbe7;
+        --on-secondary-fixed: #320047;
+        --surface-container-high: #222a3d;
+        --on-tertiary-fixed: #1a1b26;
+        --tertiary-container: #dad9e9;
+        --secondary: #ecb2ff;
+        --error-container: #93000a;
+        --on-secondary-fixed-variant: #74009f;
+        --tertiary: #f9f6ff;
+        --surface: #0b1326;
+        --on-secondary-container: #480063;
+        --on-primary-fixed: #002022;
+        --on-surface: #dae2fd;
+        --secondary-fixed-dim: #ecb2ff;
+        --outline-variant: #3a494b;
+        --background: #0b1326;
+        --inverse-surface: #dae2fd;
+        --primary-fixed: #74f5ff;
+        --surface-bright: #31394d;
+        --on-background: #dae2fd;
+        --secondary-container: #cf5cff;
+        --on-secondary: #520071;
+        --on-tertiary: #2f303b;
+        --on-tertiary-container: #5e5e6c;
+        --surface-container-lowest: #060e20;
+        --on-error-container: #ffdad6;
+        --tertiary-fixed-dim: #c6c5d4;
+        --on-surface-variant: #b9cacb;
+      }
+
+      body {
+        background: radial-gradient(
+          circle at 50% 0%,
+          var(--bg-top) 0%,
+          var(--bg-bottom) 100%
+        );
+        overflow-x: hidden;
+        position: relative;
+      }
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.035;
+        pointer-events: none;
+        z-index: 9999;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+      }
+      .neomorph-raised {
+        background: var(--btn-bg);
+        box-shadow:
+          -4px -4px 12px var(--shadow-light),
+          4px 4px 12px var(--shadow-dark);
+      }
+      .neomorph-sunken {
+        background: var(--btn-active);
+        box-shadow:
+          inset 4px 4px 8px var(--shadow-dark),
+          inset -4px -4px 8px var(--shadow-light);
+      }
+      .glass-panel {
+        backdrop-filter: blur(12px);
+        background: var(--glass-bg);
+        border: 1px solid var(--glass-border);
+      }
+      .glow-cyan {
+        box-shadow: 0 0 20px rgba(0, 219, 231, 0.3);
+      }
+      .glow-text-cyan {
+        text-shadow: 0 0 10px rgba(0, 219, 231, 0.6);
+      }
+      .animate-pulse-slow {
+        animation: pulse-glow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+      @keyframes pulse-glow {
+        0%,
+        100% {
+          opacity: 0.3;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.6;
+          transform: scale(1.1);
+        }
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      .status-indicator {
+        width: 8px;
+        height: 8px;
+        background-color: #00f2ff;
+        border-radius: 50%;
+        display: inline-block;
+        box-shadow: 0 0 10px rgba(0, 242, 255, 0.6);
+        animation: breathe 2.5s ease-in-out infinite;
+      }
+      @keyframes breathe {
+        0%,
+        100% {
+          transform: scale(0.85);
+          box-shadow:
+            0 0 6px rgba(0, 242, 255, 0.4),
+            0 0 12px rgba(0, 242, 255, 0.2);
+          opacity: 0.7;
+        }
+        50% {
+          transform: scale(1.15);
+          box-shadow:
+            0 0 14px rgba(0, 242, 255, 0.9),
+            0 0 24px rgba(0, 242, 255, 0.4);
+          opacity: 1;
+        }
+      }
+      .btn-primary {
+        background: var(--btn-bg);
+        box-shadow:
+          -4px -4px 12px var(--shadow-light),
+          4px 4px 12px var(--shadow-dark);
+        border: 1px solid rgba(0, 242, 255, 0.15);
+        text-shadow: 0 0 10px rgba(0, 242, 255, 0.6);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      }
+      .btn-primary:hover {
+        box-shadow:
+          -4px -4px 12px var(--shadow-light),
+          4px 4px 12px var(--shadow-dark),
+          0 0 20px rgba(0, 242, 255, 0.35);
+        border-color: rgba(0, 242, 255, 0.4);
+      }
+      .btn-primary:active,
+      .btn-primary.active {
+        background: var(--btn-active);
+        box-shadow:
+          inset 4px 4px 8px var(--shadow-dark),
+          inset -4px -4px 8px var(--shadow-light);
+        border-color: rgba(0, 242, 255, 0.1);
+      }
+      .btn-secondary {
+        backdrop-filter: blur(12px);
+        background: var(--glass-bg);
+        border: 1px solid rgba(236, 178, 255, 0.2);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      }
+      .btn-secondary:hover {
+        border-color: rgba(236, 178, 255, 0.6);
+        box-shadow: 0 0 20px rgba(236, 178, 255, 0.3);
+      }
+      .tactile-card {
+        background: var(--btn-bg);
+        box-shadow:
+          -4px -4px 12px var(--shadow-light),
+          4px 4px 12px var(--shadow-dark);
+        border: 1px solid var(--glass-border);
+        backdrop-filter: blur(12px);
+        position: relative;
+        transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+      }
+      .tactile-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        background: var(--glass-bg);
+        pointer-events: none;
+        transition: opacity 0.4s ease;
+      }
+      .tactile-card:hover {
+        box-shadow:
+          inset 4px 4px 8px var(--shadow-dark),
+          inset -4px -4px 8px var(--shadow-light);
+        background: var(--btn-active);
+      }
+      .tactile-card:hover::before {
+        opacity: 0;
+      }
+      .frosted-input {
+        backdrop-filter: blur(16px);
+        background: var(--glass-bg);
+        box-shadow:
+          inset 4px 4px 8px var(--shadow-dark),
+          inset -4px -4px 8px var(--shadow-light);
+        border: 1px solid var(--glass-border);
+        caret-color: #00f2ff;
+        transition: all 0.3s ease;
+      }
+      .frosted-input:focus {
+        outline: none;
+        border-color: rgba(0, 242, 255, 0.4);
+        box-shadow:
+          inset 2px 2px 4px rgba(0, 0, 0, 0.6),
+          inset -2px -2px 4px rgba(255, 255, 255, 0.02),
+          0 0 15px rgba(0, 242, 255, 0.25);
+      }
+      /* Cert badge hover glow */
+      .cert-badge:hover {
+        border-color: rgba(0, 242, 255, 0.5);
+        box-shadow: 0 0 16px rgba(0, 219, 231, 0.2);
+      }
+      /* Tab underline animation */
+      .tab-btn.active-tab {
+        color: #00dbe7;
+        border-bottom: 2px solid #00dbe7;
+        text-shadow: 0 0 10px rgba(0, 219, 231, 0.6);
+      }
+    </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+  </head>
+  <body class="text-on-surface antialiased font-body-md">
+    <!-- Ambient Background Elements -->
+    <div
+      class="fixed top-0 left-0 w-full h-full pointer-events-none -z-10 overflow-hidden"
+    >
+      <div
+        class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-secondary/10 blur-[120px] rounded-full animate-pulse-slow"
+      ></div>
+      <div
+        class="absolute bottom-[10%] right-[-5%] w-[30%] h-[30%] bg-primary-fixed-dim/10 blur-[100px] rounded-full animate-pulse-slow"
+        style="animation-delay: 2s"
+      ></div>
+    </div>
+
+    <!-- Top Navigation Bar -->
+    <header
+      class="sticky top-0 w-full bg-white/3 dark:bg-white/3 backdrop-blur-xl border-b border-[var(--terminal-border)] shadow-[4px_4px_12px_rgba(0,0,0,0.4),-4px_-4px_12px_rgba(255,255,255,0.05)] z-50"
+    >
+      <div
+        class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto"
+      >
+        <div class="flex items-center gap-2">
+          <span
+            class="material-symbols-outlined text-primary-fixed-dim font-headline-md"
+          ></span>
+          <span
+            class="font-headline-md text-headline-md font-bold tracking-tighter text-primary-fixed-dim"
+            >PRAISE_DEV</span
+          >
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+          <a
+            href="#hero"
+            class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed-dim hover:drop-shadow-[0_0_10px_rgba(0,219,231,0.5)] transition-all"
+            >HOME</a
+          >
+          <a
+            href="#about"
+            class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed-dim hover:drop-shadow-[0_0_10px_rgba(0,219,231,0.5)] transition-all"
+            >ABOUT</a
+          >
+          <a
+            href="#skills"
+            class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed-dim hover:drop-shadow-[0_0_10px_rgba(0,219,231,0.5)] transition-all"
+            >SKILLS</a
+          >
+          <a
+            href="#projects"
+            class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed-dim hover:drop-shadow-[0_0_10px_rgba(0,219,231,0.5)] transition-all"
+            >PROJECTS</a
+          >
+          <a
+            href="#experience"
+            class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed-dim hover:drop-shadow-[0_0_10px_rgba(0,219,231,0.5)] transition-all"
+            >EXPERIENCE</a
+          >
+          <a
+            href="#contact"
+            class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed-dim hover:drop-shadow-[0_0_10px_rgba(0,219,231,0.5)] transition-all"
+            >CONTACT</a
+          >
+        </nav>
+
+        <button
+          id="theme-toggle"
+          class="material-symbols-outlined text-primary-fixed-dim hover:drop-shadow-[0_0_10px_rgba(0,219,231,0.5)] transition-all duration-300 active:scale-95 ml-4"
+          aria-label="Toggle Dark Mode"
+        >
+          light_mode
+        </button>
+        <button
+          id="mobile-menu-btn"
+          class="material-symbols-outlined text-primary-fixed-dim hover:drop-shadow-[0_0_20px_rgba(0,219,231,0.5)] transition-all duration-300 active:scale-95 md:hidden"
+        >
+          menu
+        </button>
+      </div>
+      <!-- Mobile Menu Drawer -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden border-t border-[var(--terminal-border)] px-gutter py-4 flex flex-col gap-4 bg-surface/95 backdrop-blur-xl"
+      >
+        <a
+          href="#hero"
+          class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed-dim transition-all py-2"
+          onclick="closeMobileMenu()"
+          >HOME</a
+        >
+        <a
+          href="#about"
+          class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed-dim transition-all py-2"
+          onclick="closeMobileMenu()"
+          >ABOUT</a
+        >
+        <a
+          href="#skills"
+          class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed-dim transition-all py-2"
+          onclick="closeMobileMenu()"
+          >SKILLS</a
+        >
+        <a
+          href="#projects"
+          class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed-dim transition-all py-2"
+          onclick="closeMobileMenu()"
+          >PROJECTS</a
+        >
+        <a
+          href="#experience"
+          class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed-dim transition-all py-2"
+          onclick="closeMobileMenu()"
+          >EXPERIENCE</a
+        >
+        <a
+          href="#contact"
+          class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed-dim transition-all py-2"
+          onclick="closeMobileMenu()"
+          >CONTACT</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <!-- ══════════════════════════════════════════════════
+           HERO SECTION
+      ══════════════════════════════════════════════════ -->
+      <section
+        id="hero"
+        class="relative px-gutter py-16 flex flex-col justify-center min-h-[707px] max-w-container-max mx-auto w-full"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center w-full"
+        >
+          <!-- Left Column: Content -->
+          <div class="md:col-span-7 space-y-8 flex flex-col items-start">
+            <!-- Profile Photo Avatar -->
+            <div class="relative flex-shrink-0">
+              <!-- Animated glow ring -->
+              <div
+                class="absolute inset-0 rounded-full bg-gradient-to-br from-primary-fixed-dim via-secondary to-primary-fixed-dim opacity-60 blur-[10px] animate-pulse-slow scale-110"
+              ></div>
+              <!-- Cyan border ring -->
+              <div
+                class="relative w-28 h-28 md:w-32 md:h-32 rounded-full p-[3px] bg-gradient-to-br from-primary-fixed-dim via-secondary/60 to-primary-fixed-dim"
+              >
+                <div
+                  class="w-full h-full rounded-full overflow-hidden border-2 border-background"
+                >
+                  <img
+                    src="./praise-photo.png"
+                    alt="Praise Otuka — Full-Stack Software Engineer"
+                    class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+              <!-- AVAILABLE badge -->
+              <div
+                class="absolute bottom-1 right-1 glass-panel px-2 py-0.5 rounded-full border border-primary-fixed-dim/40 flex items-center gap-1"
+              >
+                <span class="status-indicator w-[6px] h-[6px]"></span>
+                <span
+                  class="font-label-code text-[9px] text-primary-fixed-dim tracking-wide"
+                  >OPEN</span
+                >
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div class="flex items-center gap-2">
+                <span class="status-indicator"></span>
+                <p
+                  class="font-label-code text-label-code text-secondary tracking-widest uppercase"
+                >
+                  Available for select projects
+                </p>
+              </div>
+              <h1
+                class="font-display text-headline-lg-mobile md:text-display text-primary-fixed-dim leading-none tracking-tight"
+              >
+                PRAISE OTUKA <br />
+                <span
+                  class="text-on-surface text-[clamp(20px,4vw,40px)] font-bold tracking-wide"
+                  >FULL-STACK ENGINEER &amp; CREATIVE</span
+                >
+              </h1>
+              <p
+                class="font-body-lg text-body-lg text-on-surface-variant max-w-lg"
+              >
+                Bridging the gap between scalable backend architecture and
+                pixel-perfect frontend interfaces powered by Python, Django
+                &amp; JavaScript.
+              </p>
+              <!-- Location badge -->
+              <div class="flex items-center gap-2">
+                <span
+                  class="material-symbols-outlined text-secondary text-[18px]"
+                  >location_on</span
+                >
+                <span
+                  class="font-label-code text-label-code text-on-surface-variant"
+                  >Abia · Imo · Akwa Ibom, Nigeria</span
+                >
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-4 w-full">
+              <a
+                href="#projects"
+                class="relative z-10 px-8 btn-primary rounded-lg py-4 font-label-caps text-label-caps text-primary-fixed-dim transition-all min-w-[140px] text-center"
+              >
+                VIEW WORK
+              </a>
+              <a
+                href="https://wa.me/2347018920195?text=Hi%20Praise%2C%20I%20saw%20your%20portfolio%20and%20I%20am%20interested%20in%20hiring%20you%20for%20a%20project.%20My%20name%20is%20%5BYour%20Name%5D."
+                target="_blank"
+                class="relative z-10 px-8 btn-secondary rounded-lg py-4 font-label-caps text-label-caps text-secondary transition-all min-w-[140px] text-center"
+              >
+                HIRE ME
+              </a>
+            </div>
+            <!-- Social links -->
+            <div class="flex items-center gap-6">
+              <a
+                href="https://github.com/praisegirl151"
+                target="_blank"
+                rel="noopener"
+                class="flex items-center gap-2 font-label-code text-label-code text-on-surface-variant hover:text-primary-fixed-dim transition-all group"
+              >
+                <span
+                  class="material-symbols-outlined text-[20px] group-hover:drop-shadow-[0_0_8px_rgba(0,219,231,0.8)]"
+                  >code</span
+                >GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/praise-otuka-619602315/"
+                target="_blank"
+                rel="noopener"
+                class="flex items-center gap-2 font-label-code text-label-code text-on-surface-variant hover:text-secondary transition-all group"
+              >
+                <span
+                  class="material-symbols-outlined text-[20px] group-hover:drop-shadow-[0_0_8px_rgba(236,178,255,0.8)]"
+                  >share</span
+                >LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Identity Card -->
+          <div class="md:col-span-5 w-full relative">
+            <div
+              class="tactile-card rounded-xl overflow-hidden p-8 flex flex-col gap-6 relative"
+            >
+              <!-- Decorative header bar -->
+              <div
+                class="flex items-center gap-2 pb-4 border-b border-[var(--terminal-border)]"
+              >
+                <span class="w-3 h-3 rounded-full bg-[#ff5f56]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#ffbd2e]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#27c93f]"></span>
+                <span
+                  class="ml-2 font-label-code text-label-code text-on-surface-variant/40"
+                  >identity.json</span
+                >
+              </div>
+              <pre
+                class="font-label-code text-label-code text-[13px] leading-relaxed overflow-x-auto"
+              ><code class="text-on-surface-variant">{
+  <span class="text-secondary">"name"</span>: <span class="text-primary-fixed-dim">"Praise Otuka"</span>,
+  <span class="text-secondary">"role"</span>: <span class="text-primary-fixed-dim">"Full-Stack Engineer"</span>,
+  <span class="text-secondary">"stack"</span>: [
+    <span class="text-[#cf5cff]">"Python"</span>, <span class="text-[#cf5cff]">"Django"</span>,
+    <span class="text-[#cf5cff]">"JavaScript"</span>, <span class="text-[#cf5cff]">"HTML/CSS"</span>
+  ],
+  <span class="text-secondary">"db"</span>: [<span class="text-primary-fixed-dim">"PostgreSQL"</span>, <span class="text-primary-fixed-dim">"SQLite"</span>],
+  <span class="text-secondary">"design"</span>: <span class="text-primary-fixed-dim">"CorelDRAW"</span>,
+  <span class="text-secondary">"status"</span>: <span class="text-[#27c93f]">"open_to_work"</span>
+}</code></pre>
+              <!-- Glow orb decoration -->
+              <div
+                class="absolute -bottom-8 -right-8 w-40 h-40 bg-primary-fixed-dim/10 blur-[60px] rounded-full pointer-events-none"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════
+           ABOUT / SKILLS SECTION
+      ══════════════════════════════════════════════════ -->
+      <section
+        id="about"
+        class="px-gutter py-12 max-w-container-max mx-auto w-full"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+          <!-- Left: Who I Am -->
+          <div class="md:col-span-5 mb-10 md:mb-0">
+            <h2
+              class="font-headline-md text-headline-md text-on-surface mb-4 flex items-center gap-2"
+            >
+              <span class="w-8 h-[2px] bg-primary-fixed-dim"></span>
+              THE_FOUNDATION
+            </h2>
+            <p
+              class="font-body-md text-body-md text-on-surface-variant max-w-md mb-6"
+            >
+              Innovative and detail-oriented Full-Stack Software Engineer with a
+              strong foundation in Python (Django) and Frontend Development. I
+              bridge the gap between technical solutions and user needs through
+              data analysis and creative problem-solving.
+            </p>
+            <p
+              class="font-body-md text-body-md text-on-surface-variant max-w-md"
+            >
+              Adept at building scalable web applications, optimizing digital
+              workflows, and collaborating in remote, fast-paced environments.
+              Beyond code, I'm a Graphics Designer, Mobile Photographer, and
+              Video Editor.
+            </p>
+          </div>
+          <!-- Right: Core Skill Cards -->
+          <div class="md:col-span-7 grid grid-cols-2 gap-4">
+            <!-- Python / Django -->
+            <div
+              class="tactile-card p-6 rounded-lg flex flex-col items-center gap-3 group hover:scale-[1.02] transition-all"
+            >
+              <div
+                class="w-12 h-12 glass-panel rounded-xl flex items-center justify-center"
+              >
+                <span
+                  class="material-symbols-outlined text-primary-fixed-dim text-3xl group-hover:drop-shadow-[0_0_8px_rgba(0,219,231,0.8)] transition-all"
+                  >deployed_code</span
+                >
+              </div>
+              <span class="font-label-code text-label-code text-on-surface"
+                >Python / Django</span
+              >
+            </div>
+            <!-- JavaScript -->
+            <div
+              class="tactile-card p-6 rounded-lg flex flex-col items-center gap-3 group hover:scale-[1.02] transition-all"
+            >
+              <div
+                class="w-12 h-12 glass-panel rounded-xl flex items-center justify-center"
+              >
+                <span
+                  class="material-symbols-outlined text-secondary text-3xl group-hover:drop-shadow-[0_0_8px_rgba(236,178,255,0.8)] transition-all"
+                  >terminal</span
+                >
+              </div>
+              <span class="font-label-code text-label-code text-on-surface"
+                >JavaScript ES6+</span
+              >
+            </div>
+            <!-- PostgreSQL -->
+            <div
+              class="tactile-card p-6 rounded-lg flex flex-col items-center gap-3 group hover:scale-[1.02] transition-all"
+            >
+              <div
+                class="w-12 h-12 glass-panel rounded-xl flex items-center justify-center"
+              >
+                <span
+                  class="material-symbols-outlined text-secondary text-3xl group-hover:drop-shadow-[0_0_8px_rgba(236,178,255,0.8)] transition-all"
+                  >database</span
+                >
+              </div>
+              <span class="font-label-code text-label-code text-on-surface"
+                >PostgreSQL</span
+              >
+            </div>
+            <!-- Design -->
+            <div
+              class="tactile-card p-6 rounded-lg flex flex-col items-center gap-3 group hover:scale-[1.02] transition-all"
+            >
+              <div
+                class="w-12 h-12 glass-panel rounded-xl flex items-center justify-center"
+              >
+                <span
+                  class="material-symbols-outlined text-primary-fixed-dim text-3xl group-hover:drop-shadow-[0_0_8px_rgba(0,219,231,0.8)] transition-all"
+                  >palette</span
+                >
+              </div>
+              <span class="font-label-code text-label-code text-on-surface"
+                >Graphics Design</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════
+           TECH ECOSYSTEM SECTION
+      ══════════════════════════════════════════════════ -->
+      <section
+        id="skills"
+        class="px-gutter py-12 max-w-container-max mx-auto w-full"
+      >
+        <h2
+          class="font-headline-md text-headline-md text-on-surface mb-8 text-center uppercase tracking-tighter"
+        >
+          Tech_Ecosystem
+        </h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full"
+        >
+          <!-- Languages -->
+          <div class="glass-panel p-6 rounded-xl">
+            <h3
+              class="font-label-caps text-label-caps text-primary-fixed-dim mb-4 flex items-center justify-between"
+            >
+              LANGUAGES
+              <span class="material-symbols-outlined text-[16px]">code</span>
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="neomorph-sunken px-3 py-1.5 rounded-full font-label-code text-label-code text-on-surface-variant border border-white/5"
+                >Python</span
+              >
+              <span
+                class="neomorph-sunken px-3 py-1.5 rounded-full font-label-code text-label-code text-on-surface-variant border border-white/5"
+                >JavaScript</span
+              >
+              <span
+                class="neomorph-sunken px-3 py-1.5 rounded-full font-label-code text-label-code text-on-surface-variant border border-white/5"
+                >HTML5</span
+              >
+              <span
+                class="neomorph-sunken px-3 py-1.5 rounded-full font-label-code text-label-code text-on-surface-variant border border-white/5"
+                >CSS3</span
+              >
+            </div>
+          </div>
+          <!-- Frameworks -->
+          <div class="glass-panel p-6 rounded-xl">
+            <h3
+              class="font-label-caps text-label-caps text-secondary mb-4 flex items-center justify-between"
+            >
+              FRAMEWORKS
+              <span class="material-symbols-outlined text-[16px]">layers</span>
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="neomorph-sunken px-3 py-1.5 rounded-full font-label-code text-label-code text-on-surface-variant border border-white/5"
+                >Django</span
+              >
+              <span
+                class="neomorph-sunken px-3 py-1.5 rounded-full font-label-code text-label-code text-on-surface-variant border border-white/5"
+                >Bootstrap</span
+              >
+              <span
+                class="neomorph-sunken px-3 py-1.5 rounded-full font-label-code text-label-code text-on-surface-variant border border-white/5"
+                >Tailwind CSS</span
+              >
+            </div>
+          </div>
+          <!-- Tools & DBs -->
+          <div class="glass-panel p-6 rounded-xl">
+            <h3
+              class="font-label-caps text-label-caps text-primary-fixed-dim mb-4 flex items-center justify-between"
+            >
+              TOOLS &amp; DBs
+              <span class="material-symbols-outlined text-[16px]">dns</span>
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="neomorph-sunken px-3 py-1.5 rounded-full font-label-code text-label-code text-on-surface-variant border border-white/5"
+                >Git/GitHub</span
+              >
+              <span
+                class="neomorph-sunken px-3 py-1.5 rounded-full font-label-code text-label-code text-on-surface-variant border border-white/5"
+                >PostgreSQL</span
+              >
+              <span
+                class="neomorph-sunken px-3 py-1.5 rounded-full font-label-code text-label-code text-on-surface-variant border border-white/5"
+                >SQLite</span
+              >
+              <span
+                class="neomorph-sunken px-3 py-1.5 rounded-full font-label-code text-label-code text-on-surface-variant border border-white/5"
+                >MS Office</span
+              >
+            </div>
+          </div>
+          <!-- Design & Media -->
+          <div class="glass-panel p-6 rounded-xl">
+            <h3
+              class="font-label-caps text-label-caps text-secondary mb-4 flex items-center justify-between"
+            >
+              DESIGN &amp; MEDIA
+              <span class="material-symbols-outlined text-[16px]">palette</span>
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="neomorph-sunken px-3 py-1.5 rounded-full font-label-code text-label-code text-on-surface-variant border border-white/5"
+                >CorelDRAW</span
+              >
+              <span
+                class="neomorph-sunken px-3 py-1.5 rounded-full font-label-code text-label-code text-on-surface-variant border border-white/5"
+                >Graphic Design</span
+              >
+              <span
+                class="neomorph-sunken px-3 py-1.5 rounded-full font-label-code text-label-code text-on-surface-variant border border-white/5"
+                >Video Editing</span
+              >
+              <span
+                class="neomorph-sunken px-3 py-1.5 rounded-full font-label-code text-label-code text-on-surface-variant border border-white/5"
+                >Photography</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills row -->
+        <div class="mt-6 glass-panel p-6 rounded-xl w-full">
+          <h3
+            class="font-label-caps text-label-caps text-on-surface-variant mb-4 flex items-center gap-2"
+          >
+            <span class="material-symbols-outlined text-[16px]"
+              >psychology</span
+            >
+            SOFT SKILLS
+          </h3>
+          <div class="flex flex-wrap gap-3">
+            <span
+              class="neomorph-sunken px-4 py-2 rounded-full font-label-code text-label-code text-on-surface-variant border border-white/5"
+              >Agile Methodology</span
+            >
+            <span
+              class="neomorph-sunken px-4 py-2 rounded-full font-label-code text-label-code text-on-surface-variant border border-white/5"
+              >Technical Documentation</span
+            >
+            <span
+              class="neomorph-sunken px-4 py-2 rounded-full font-label-code text-label-code text-on-surface-variant border border-white/5"
+              >Complex Problem Solving</span
+            >
+            <span
+              class="neomorph-sunken px-4 py-2 rounded-full font-label-code text-label-code text-on-surface-variant border border-white/5"
+              >Public Speaking</span
+            >
+            <span
+              class="neomorph-sunken px-4 py-2 rounded-full font-label-code text-label-code text-on-surface-variant border border-white/5"
+              >Data Analysis</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════
+           PROJECTS SHOWCASE
+      ══════════════════════════════════════════════════ -->
+      <section id="projects" class="py-12">
+        <div
+          class="px-gutter mb-6 flex items-end justify-between max-w-container-max mx-auto"
+        >
+          <h2
+            class="font-headline-md text-headline-md text-on-surface uppercase tracking-tighter leading-none"
+          >
+            Selected_Artifacts
+          </h2>
+          <span class="font-label-code text-label-code text-on-surface-variant"
+            >04 PROJECTS</span
+          >
+        </div>
+        <div
+          class="flex md:grid md:grid-cols-2 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory scrollbar-hide px-gutter gap-6 md:gap-8 max-w-container-max mx-auto"
+        >
+          <!-- Project 1: MEDCORE -->
+          <div
+            class="snap-center shrink-0 w-[85vw] md:w-auto tactile-card rounded-lg overflow-hidden flex flex-col group"
+          >
+            <div
+              class="h-48 relative overflow-hidden bg-white flex items-center justify-center group-hover:bg-gray-50 transition-colors"
+            >
+              <img
+                src="./medcore-logo.png"
+                alt="Medcore Logo"
+                class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+              />
+              <div
+                class="absolute top-4 right-4 bg-black/80 backdrop-blur-md px-3 py-1 rounded-full border border-white/20 z-10"
+              >
+                <span class="font-label-code text-label-caps text-white"
+                  >ACTIVE</span
+                >
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <h3
+                class="font-headline-md text-headline-md text-on-surface mb-2"
+              >
+                MEDCORE
+              </h3>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mb-4 flex-1"
+              >
+                MindCare &amp; MedVerify — A Hospital Management System infused
+                with medicine verification, anonymous fake drug reporting, and a
+                mental health module. Built with Django &amp; JavaScript.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="glass-panel px-3 py-1 rounded-full font-label-code text-label-code text-primary-fixed-dim text-[11px] border border-primary-fixed-dim/20"
+                  >Django</span
+                >
+                <span
+                  class="glass-panel px-3 py-1 rounded-full font-label-code text-label-code text-secondary text-[11px] border border-secondary/20"
+                  >JavaScript</span
+                >
+                <span
+                  class="glass-panel px-3 py-1 rounded-full font-label-code text-label-code text-on-surface-variant text-[11px] border border-[var(--terminal-border)]"
+                  >PostgreSQL</span
+                >
+              </div>
+              <div class="flex justify-end items-center">
+                <span
+                  class="btn-secondary rounded-full px-6 py-2 font-label-caps text-label-caps text-secondary text-[11px] cursor-pointer"
+                  >COMING SOON</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: ARIARIA -->
+          <div
+            class="snap-center shrink-0 w-[85vw] md:w-auto tactile-card rounded-lg overflow-hidden flex flex-col group"
+          >
+            <div
+              class="h-48 relative overflow-hidden bg-white flex items-center justify-center"
+            >
+              <img
+                src="./ariaria-logo.jpg"
+                alt="Ariaria Marketplace Logo"
+                class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+              />
+              <div
+                class="absolute top-4 right-4 bg-black/80 backdrop-blur-md px-3 py-1 rounded-full border border-white/20 z-10"
+              >
+                <span
+                  class="font-label-code text-label-caps text-white"
+                  >2024</span
+                >
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <h3
+                class="font-headline-md text-headline-md text-on-surface mb-2"
+              >
+                ARIARIA
+              </h3>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mb-4 flex-1"
+              >
+                A responsive e-commerce full website using HTML, CSS, and JS.
+                Optimized for mobile performance and accessibility.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="glass-panel px-3 py-1 rounded-full font-label-code text-label-code text-primary-fixed-dim text-[11px] border border-primary-fixed-dim/20"
+                  >HTML5</span
+                >
+                <span
+                  class="glass-panel px-3 py-1 rounded-full font-label-code text-label-code text-secondary text-[11px] border border-secondary/20"
+                  >CSS3</span
+                >
+                <span
+                  class="glass-panel px-3 py-1 rounded-full font-label-code text-label-code text-on-surface-variant text-[11px] border border-[var(--terminal-border)]"
+                  >JavaScript</span
+                >
+              </div>
+              <div class="flex justify-end items-center">
+                <button
+                  class="btn-secondary rounded-full px-6 py-2 font-label-caps text-label-caps text-secondary transition-all"
+                >
+                  VIEW
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: SEWSURE -->
+          <div
+            class="snap-center shrink-0 w-[85vw] md:w-auto tactile-card rounded-lg overflow-hidden flex flex-col group"
+          >
+            <div
+              class="h-48 relative overflow-hidden bg-gradient-to-br from-[#0b1a1e] via-[#0b2626] to-[#0b1326] flex items-center justify-center"
+            >
+              <div class="text-center px-6">
+                <span
+                  class="material-symbols-outlined text-primary-fixed-dim text-5xl group-hover:drop-shadow-[0_0_20px_rgba(0,219,231,0.8)] transition-all"
+                  >checkroom</span
+                >
+                <p class="font-label-code text-label-code text-secondary mt-2">
+                  Fashion-Tech Startup
+                </p>
+              </div>
+              <div
+                class="absolute top-4 right-4 glass-panel px-3 py-1 rounded-full"
+              >
+                <span class="font-label-code text-label-caps text-secondary"
+                  >ACTIVE</span
+                >
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <h3
+                class="font-headline-md text-headline-md text-on-surface mb-2"
+              >
+                SEWSURE
+              </h3>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mb-4 flex-1"
+              >
+                Connecting clients with verified tailors via a secure digital
+                platform. Features digital body measurements, escrow payments,
+                and real-time order tracking to solve trust, fitting, and
+                delivery challenges in Nigeria's tailoring industry.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="glass-panel px-3 py-1 rounded-full font-label-code text-label-code text-primary-fixed-dim text-[11px] border border-primary-fixed-dim/20"
+                  >Django</span
+                >
+                <span
+                  class="glass-panel px-3 py-1 rounded-full font-label-code text-label-code text-secondary text-[11px] border border-secondary/20"
+                  >Fintech</span
+                >
+                <span
+                  class="glass-panel px-3 py-1 rounded-full font-label-code text-label-code text-on-surface-variant text-[11px] border border-[var(--terminal-border)]"
+                  >Real-time</span
+                >
+              </div>
+              <div class="flex justify-end items-center">
+                <span
+                  class="btn-secondary rounded-full px-6 py-2 font-label-caps text-label-caps text-secondary text-[11px] cursor-pointer"
+                  >IN PROGRESS</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: BUILDTRUST -->
+          <div
+            class="snap-center shrink-0 w-[85vw] md:w-auto tactile-card rounded-lg overflow-hidden flex flex-col group"
+          >
+            <div
+              class="h-48 relative overflow-hidden bg-white flex items-center justify-center group-hover:bg-gray-50 transition-colors"
+            >
+              <img
+                src="./buildtrust-logo.png"
+                alt="Buildtrust Logo"
+                class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+              />
+              <div
+                class="absolute top-4 right-4 bg-black/80 backdrop-blur-md px-3 py-1 rounded-full border border-white/20 z-10"
+              >
+                <span class="font-label-code text-label-caps text-white"
+                  >2025</span
+                >
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <h3
+                class="font-headline-md text-headline-md text-on-surface mb-2"
+              >
+                BUILDTRUST
+              </h3>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mb-4 flex-1"
+              >
+                A construction-tech platform bringing trust, transparency, and
+                accountability to building projects across Nigeria — and Africa.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="glass-panel px-3 py-1 rounded-full font-label-code text-label-code text-primary-fixed-dim text-[11px] border border-primary-fixed-dim/20"
+                  >Django</span
+                >
+                <span
+                  class="glass-panel px-3 py-1 rounded-full font-label-code text-label-code text-secondary text-[11px] border border-secondary/20"
+                  >JavaScript</span
+                >
+                <span
+                  class="glass-panel px-3 py-1 rounded-full font-label-code text-label-code text-on-surface-variant text-[11px] border border-[var(--terminal-border)]"
+                  >PropTech</span
+                >
+              </div>
+              <div class="flex justify-end items-center">
+                <span
+                  class="btn-secondary rounded-full px-6 py-2 font-label-caps text-label-caps text-secondary text-[11px] cursor-pointer"
+                  >IN PROGRESS</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════
+           EXPERIENCE TIMELINE
+      ══════════════════════════════════════════════════ -->
+      <section
+        id="experience"
+        class="px-gutter py-12 w-full max-w-container-max mx-auto"
+      >
+        <h2
+          class="font-headline-md text-headline-md text-on-surface mb-10 text-center"
+        >
+          JOURNEY_LOG
+        </h2>
+        <div
+          class="relative pl-8 border-l border-[var(--terminal-border)] space-y-12 ml-4 max-w-3xl md:mx-auto"
+        >
+          <!-- Experience 1: LearnFactory -->
+          <div class="relative">
+            <div
+              class="absolute -left-[41px] top-0 w-4 h-4 bg-primary-fixed-dim rounded-full glow-cyan border-4 border-background"
+            ></div>
+            <span class="font-label-code text-label-code text-secondary"
+              >OCT 2025 – PRESENT</span
+            >
+            <h3 class="font-headline-md text-headline-md text-on-surface mt-1">
+              Full-Stack Developer Intern
+            </h3>
+            <p
+              class="font-label-caps text-label-caps text-on-surface-variant mb-2"
+            >
+              LEARNFACTORY NIGERIA (ABIA TECHRISE)
+            </p>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Developing full-stack web applications using Python and Django.
+              Collaborating on frontend interfaces using JavaScript, HTML, and
+              CSS. Participating in code reviews and agile sprints to deliver
+              functional software solutions.
+            </p>
+          </div>
+
+          <!-- Experience 2: Ipoint Hub -->
+          <div class="relative">
+            <div
+              class="absolute -left-[41px] top-0 w-4 h-4 bg-secondary rounded-full border-4 border-background opacity-80"
+            ></div>
+            <span class="font-label-code text-label-code text-secondary"
+              >2024 – PRESENT</span
+            >
+            <h3 class="font-headline-md text-headline-md text-on-surface mt-1">
+              Marketing Lead / Technical Support
+            </h3>
+            <p
+              class="font-label-caps text-label-caps text-on-surface-variant mb-2"
+            >
+              IPOINT HUB, UYO (REMOTE)
+            </p>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Leveraging data analysis to identify consumer trends and refine
+              lead-generation strategies. Executing digital marketing campaigns
+              and bridging communication between the technical team and
+              customers.
+            </p>
+          </div>
+
+          <!-- Experience 3: NERC -->
+          <div class="relative">
+            <div
+              class="absolute -left-[41px] top-0 w-4 h-4 bg-secondary rounded-full border-4 border-background opacity-60"
+            ></div>
+            <span
+              class="font-label-code text-label-code text-on-surface-variant"
+              >2024 – 2025</span
+            >
+            <h3 class="font-headline-md text-headline-md text-on-surface mt-1">
+              Data Analyst / Customer Support
+            </h3>
+            <p
+              class="font-label-caps text-label-caps text-on-surface-variant mb-2"
+            >
+              NERC, UYO FORUM
+            </p>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Analyzed complex consumer datasets to identify service bottlenecks
+              and improve regulatory compliance. Utilized technical
+              documentation skills to record and track service-related inquiries
+              and resolutions.
+            </p>
+          </div>
+
+          <!-- Experience 4: Alpha Cyber -->
+          <div class="relative">
+            <div
+              class="absolute -left-[41px] top-0 w-4 h-4 bg-primary-fixed-dim rounded-full border-4 border-background opacity-50"
+            ></div>
+            <span
+              class="font-label-code text-label-code text-on-surface-variant"
+              >2023 – PRESENT</span
+            >
+            <h3 class="font-headline-md text-headline-md text-on-surface mt-1">
+              Assistant Chief Designer &amp; Tutor
+            </h3>
+            <p
+              class="font-label-caps text-label-caps text-on-surface-variant mb-2"
+            >
+              ALPHA CYBER INSTITUTE (REMOTE)
+            </p>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Instructed students in web design fundamentals and core technical
+              skills. Managed virtual learning platforms, provided technical
+              troubleshooting, and designed digital assets and UI components for
+              instructional materials.
+            </p>
+          </div>
+
+          <!-- Experience 5: Letters & Words -->
+          <div class="relative">
+            <div
+              class="absolute -left-[41px] top-0 w-4 h-4 bg-secondary rounded-full border-4 border-background opacity-40"
+            ></div>
+            <span
+              class="font-label-code text-label-code text-on-surface-variant"
+              >2024 – PRESENT</span
+            >
+            <h3 class="font-headline-md text-headline-md text-on-surface mt-1">
+              Online English &amp; Literature Tutor
+            </h3>
+            <p
+              class="font-label-caps text-label-caps text-on-surface-variant mb-2"
+            >
+              LETTERS &amp; WORDS ACADEMY (REMOTE)
+            </p>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Delivering structured virtual lessons in English Language and
+              Literature to Year 6 students using Zoom, Google Meet, and
+              interactive digital tools.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════
+           EDUCATION & CERTIFICATIONS SECTION
+      ══════════════════════════════════════════════════ -->
+      <section
+        id="education"
+        class="px-gutter py-12 max-w-container-max mx-auto w-full"
+      >
+        <h2
+          class="font-headline-md text-headline-md text-on-surface mb-8 text-center uppercase tracking-tighter"
+        >
+          Credentials_Log
+        </h2>
+
+        <!-- Tabs -->
+        <div class="flex gap-6 border-b border-[var(--terminal-border)] mb-8">
+          <button
+            id="tab-education"
+            class="tab-btn active-tab pb-3 font-label-caps text-label-caps transition-all"
+            onclick="switchTab('education')"
+          >
+            EDUCATION
+          </button>
+          <button
+            id="tab-certs"
+            class="tab-btn pb-3 font-label-caps text-label-caps text-on-surface-variant transition-all hover:text-primary-fixed-dim"
+            onclick="switchTab('certs')"
+          >
+            CERTIFICATIONS
+          </button>
+        </div>
+
+        <!-- Education Panel -->
+        <div id="panel-education" class="space-y-4">
+          <!-- B.Ed -->
+          <a
+            href="https://drive.google.com/file/d/18jWZemwE_SC2DQE3HegkYx13EdN7zphg/view?usp=sharing"
+            target="_blank"
+            rel="noopener"
+            class="cert-badge flex items-start gap-4 glass-panel p-5 rounded-xl border border-[var(--terminal-border)] hover:bg-white/5 transition-all group block"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-primary-fixed-dim/10 flex items-center justify-center shrink-0 mt-1"
+            >
+              <span
+                class="material-symbols-outlined text-primary-fixed-dim text-xl"
+                >school</span
+              >
+            </div>
+            <div class="flex-1">
+              <h4
+                class="font-body-md font-bold text-on-surface group-hover:text-primary-fixed-dim transition-colors"
+              >
+                B.Ed. English Language &amp; Literature
+              </h4>
+              <p
+                class="font-label-code text-label-code text-on-surface-variant"
+              >
+                University of Nigeria, Nsukka
+              </p>
+            </div>
+            <span
+              class="material-symbols-outlined text-on-surface-variant/40 group-hover:text-primary-fixed-dim transition-colors"
+              >open_in_new</span
+            >
+          </a>
+
+          <!-- Full-Stack Dev -->
+          <a
+            href="https://drive.google.com/file/d/1mQ3d3jPkuc-Z18Lu8Y6ZbG-Qw-Txdg6p/view?usp=sharing"
+            target="_blank"
+            rel="noopener"
+            class="cert-badge flex items-start gap-4 glass-panel p-5 rounded-xl border border-[var(--terminal-border)] hover:bg-white/5 transition-all group block"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center shrink-0 mt-1"
+            >
+              <span class="material-symbols-outlined text-secondary text-xl"
+                >code</span
+              >
+            </div>
+            <div class="flex-1">
+              <h4
+                class="font-body-md font-bold text-on-surface group-hover:text-secondary transition-colors"
+              >
+                Full-Stack Development with Python
+              </h4>
+              <p
+                class="font-label-code text-label-code text-on-surface-variant"
+              >
+                LearnFactory Nigeria (Abia Techrise)
+              </p>
+            </div>
+            <span
+              class="material-symbols-outlined text-on-surface-variant/40 group-hover:text-secondary transition-colors"
+              >open_in_new</span
+            >
+          </a>
+
+          <!-- Backend Dev -->
+          <a
+            href="https://drive.google.com/file/d/1WkleHts_oyj43RM8f2J1KPDiuoC3ht29/view?usp=sharing"
+            target="_blank"
+            rel="noopener"
+            class="cert-badge flex items-start gap-4 glass-panel p-5 rounded-xl border border-[var(--terminal-border)] hover:bg-white/5 transition-all group block"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-primary-fixed-dim/10 flex items-center justify-center shrink-0 mt-1"
+            >
+              <span
+                class="material-symbols-outlined text-primary-fixed-dim text-xl"
+                >dns</span
+              >
+            </div>
+            <div class="flex-1">
+              <h4
+                class="font-body-md font-bold text-on-surface group-hover:text-primary-fixed-dim transition-colors"
+              >
+                Certified Backend Developer
+              </h4>
+              <p
+                class="font-label-code text-label-code text-on-surface-variant"
+              >
+                Computer Professionals — Registration Council of Nigeria
+              </p>
+            </div>
+            <span
+              class="material-symbols-outlined text-on-surface-variant/40 group-hover:text-primary-fixed-dim transition-colors"
+              >open_in_new</span
+            >
+          </a>
+
+          <!-- IT Specialist -->
+          <a
+            href="https://drive.google.com/file/d/1WkleHts_oyj43RM8f2J1KPDiuoC3ht29/view?usp=sharing"
+            target="_blank"
+            rel="noopener"
+            class="cert-badge flex items-start gap-4 glass-panel p-5 rounded-xl border border-[var(--terminal-border)] hover:bg-white/5 transition-all group block"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center shrink-0 mt-1"
+            >
+              <span class="material-symbols-outlined text-secondary text-xl"
+                >verified</span
+              >
+            </div>
+            <div class="flex-1">
+              <h4
+                class="font-body-md font-bold text-on-surface group-hover:text-secondary transition-colors"
+              >
+                IT Specialist – HTML &amp; CSS
+              </h4>
+              <p
+                class="font-label-code text-label-code text-on-surface-variant"
+              >
+                Certiport (Pearson Vue)
+              </p>
+            </div>
+            <span
+              class="material-symbols-outlined text-on-surface-variant/40 group-hover:text-secondary transition-colors"
+              >open_in_new</span
+            >
+          </a>
+
+          <!-- Power Learn Project -->
+          <a
+            href="https://drive.google.com/file/d/1lSy_DDh83N6euBWudYLMxsedkGTzMWar/view?usp=sharing"
+            target="_blank"
+            rel="noopener"
+            class="cert-badge flex items-start gap-4 glass-panel p-5 rounded-xl border border-[var(--terminal-border)] hover:bg-white/5 transition-all group block"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-primary-fixed-dim/10 flex items-center justify-center shrink-0 mt-1"
+            >
+              <span
+                class="material-symbols-outlined text-primary-fixed-dim text-xl"
+                >workspace_premium</span
+              >
+            </div>
+            <div class="flex-1">
+              <h4
+                class="font-body-md font-bold text-on-surface group-hover:text-primary-fixed-dim transition-colors"
+              >
+                Certification of Achievement — 16-Week Software Development
+              </h4>
+              <p
+                class="font-label-code text-label-code text-on-surface-variant"
+              >
+                Power Learn Project, Kenya
+              </p>
+              <p
+                class="font-label-code text-label-code text-on-surface-variant/60 text-[11px] mt-1"
+              >
+                Python · Database Design · SQL · Web Development · Software
+                Engineering
+              </p>
+            </div>
+            <span
+              class="material-symbols-outlined text-on-surface-variant/40 group-hover:text-primary-fixed-dim transition-colors"
+              >open_in_new</span
+            >
+          </a>
+        </div>
+
+        <!-- Certifications Panel (hidden by default) -->
+        <div id="panel-certs" class="space-y-4 hidden">
+          <!-- AI Sprint Bootcamp -->
+          <a
+            href="https://drive.google.com/file/d/19c_4fUPRZ2_XY9UCOz1zIamFt6du4SpM/view?usp=sharing"
+            target="_blank"
+            rel="noopener"
+            class="cert-badge flex items-start gap-4 glass-panel p-5 rounded-xl border border-[var(--terminal-border)] hover:bg-white/5 transition-all group block"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center shrink-0 mt-1"
+            >
+              <span class="material-symbols-outlined text-secondary text-xl"
+                >smart_toy</span
+              >
+            </div>
+            <div class="flex-1">
+              <h4
+                class="font-body-md font-bold text-on-surface group-hover:text-secondary transition-colors"
+              >
+                AI Sprint Boot Camp
+              </h4>
+              <p
+                class="font-label-code text-label-code text-on-surface-variant"
+              >
+                Hello PM by Ankit Shukla
+              </p>
+            </div>
+            <span
+              class="material-symbols-outlined text-on-surface-variant/40 group-hover:text-secondary transition-colors"
+              >open_in_new</span
+            >
+          </a>
+
+          <!-- Women Techsters -->
+          <a
+            href="https://drive.google.com/file/d/1fIQ0R9GFoLbvykGsACbGeLHyh11ark4r/view?usp=sharing"
+            target="_blank"
+            rel="noopener"
+            class="cert-badge flex items-start gap-4 glass-panel p-5 rounded-xl border border-[var(--terminal-border)] hover:bg-white/5 transition-all group block"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-primary-fixed-dim/10 flex items-center justify-center shrink-0 mt-1"
+            >
+              <span
+                class="material-symbols-outlined text-primary-fixed-dim text-xl"
+                >groups</span
+              >
+            </div>
+            <div class="flex-1">
+              <h4
+                class="font-body-md font-bold text-on-surface group-hover:text-primary-fixed-dim transition-colors"
+              >
+                Software Developer Certificate
+              </h4>
+              <p
+                class="font-label-code text-label-code text-on-surface-variant"
+              >
+                Women Techsters Initiative Bootcamp Cohort 4.1
+              </p>
+            </div>
+            <span
+              class="material-symbols-outlined text-on-surface-variant/40 group-hover:text-primary-fixed-dim transition-colors"
+              >open_in_new</span
+            >
+          </a>
+
+          <!-- Nobel Learning PC — Internship -->
+          <a
+            href="https://drive.google.com/file/d/1IgJolZG7JDJqws0KMyuVV7J9NLgNHYr/view?usp=sharing"
+            target="_blank"
+            rel="noopener"
+            class="cert-badge flex items-start gap-4 glass-panel p-5 rounded-xl border border-[var(--terminal-border)] hover:bg-white/5 transition-all group block"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center shrink-0 mt-1"
+            >
+              <span class="material-symbols-outlined text-secondary text-xl"
+                >business_center</span
+              >
+            </div>
+            <div class="flex-1">
+              <h4
+                class="font-body-md font-bold text-on-surface group-hover:text-secondary transition-colors"
+              >
+                Certification of Internship
+              </h4>
+              <p
+                class="font-label-code text-label-code text-on-surface-variant"
+              >
+                Nobel Learning PC
+              </p>
+              <p
+                class="font-label-code text-label-code text-on-surface-variant/60 text-[11px] mt-1"
+              >
+                Pitch &amp; Presentation · Internet Troubleshooting · Leadership
+                · Web Design
+              </p>
+            </div>
+            <span
+              class="material-symbols-outlined text-on-surface-variant/40 group-hover:text-secondary transition-colors"
+              >open_in_new</span
+            >
+          </a>
+
+          <!-- Mobile Photography -->
+          <a
+            href="https://drive.google.com/file/d/1q8uzrg4NVuz_rvyuAJlLHoucCY4Q1bDN/view?usp=sharing"
+            target="_blank"
+            rel="noopener"
+            class="cert-badge flex items-start gap-4 glass-panel p-5 rounded-xl border border-[var(--terminal-border)] hover:bg-white/5 transition-all group block"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-primary-fixed-dim/10 flex items-center justify-center shrink-0 mt-1"
+            >
+              <span
+                class="material-symbols-outlined text-primary-fixed-dim text-xl"
+                >photo_camera</span
+              >
+            </div>
+            <div class="flex-1">
+              <h4
+                class="font-body-md font-bold text-on-surface group-hover:text-primary-fixed-dim transition-colors"
+              >
+                Diploma — Mobile Photography &amp; Video Editing
+              </h4>
+              <p
+                class="font-label-code text-label-code text-on-surface-variant"
+              >
+                CSSAE Digital Skills Project
+              </p>
+            </div>
+            <span
+              class="material-symbols-outlined text-on-surface-variant/40 group-hover:text-primary-fixed-dim transition-colors"
+              >open_in_new</span
+            >
+          </a>
+
+          <!-- NYSC -->
+          <a
+            href="https://drive.google.com/file/d/1SM7Zoeeqozr2Z4jOTGSTtlDSo7_tXIiz/view?usp=sharing"
+            target="_blank"
+            rel="noopener"
+            class="cert-badge flex items-start gap-4 glass-panel p-5 rounded-xl border border-[var(--terminal-border)] hover:bg-white/5 transition-all group block"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center shrink-0 mt-1"
+            >
+              <span class="material-symbols-outlined text-secondary text-xl"
+                >military_tech</span
+              >
+            </div>
+            <div class="flex-1">
+              <h4
+                class="font-body-md font-bold text-on-surface group-hover:text-secondary transition-colors"
+              >
+                National Youth Service Corps (NYSC)
+              </h4>
+              <p
+                class="font-label-code text-label-code text-on-surface-variant"
+              >
+                Federal Republic of Nigeria
+              </p>
+            </div>
+            <span
+              class="material-symbols-outlined text-on-surface-variant/40 group-hover:text-secondary transition-colors"
+              >open_in_new</span
+            >
+          </a>
+
+          <!-- Nobel — Graphics Design -->
+          <div
+            class="cert-badge flex items-start gap-4 glass-panel p-5 rounded-xl border border-[var(--terminal-border)] transition-all"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-primary-fixed-dim/10 flex items-center justify-center shrink-0 mt-1"
+            >
+              <span
+                class="material-symbols-outlined text-primary-fixed-dim text-xl"
+                >palette</span
+              >
+            </div>
+            <div class="flex-1">
+              <h4 class="font-body-md font-bold text-on-surface">
+                Certification of Specialization — Intro to Graphics Design
+              </h4>
+              <p
+                class="font-label-code text-label-code text-on-surface-variant"
+              >
+                Nobel Learning PC
+              </p>
+            </div>
+          </div>
+
+          <!-- Microsoft Office -->
+          <div
+            class="cert-badge flex items-start gap-4 glass-panel p-5 rounded-xl border border-[var(--terminal-border)] transition-all"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center shrink-0 mt-1"
+            >
+              <span class="material-symbols-outlined text-secondary text-xl"
+                >description</span
+              >
+            </div>
+            <div class="flex-1">
+              <h4 class="font-body-md font-bold text-on-surface">
+                Diploma — Microsoft Office Packages
+              </h4>
+              <p
+                class="font-label-code text-label-code text-on-surface-variant"
+              >
+                Alvan Ikoku Federal College of Education
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════
+           CONTACT SECTION
+      ══════════════════════════════════════════════════ -->
+      <section
+        id="contact"
+        class="px-gutter py-16 max-w-container-max mx-auto w-full"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-12 gap-12 items-stretch w-full"
+        >
+          <!-- Left Column: Transmission Terminal -->
+          <div
+            class="hidden md:flex md:col-span-5 flex-col bg-[var(--terminal-bg)] rounded-xl border border-[var(--terminal-border)] p-6 font-label-code text-label-code text-[#00F2FF]/95 shadow-[inset_0_4px_24px_rgba(0,0,0,0.8)] h-full justify-between min-h-[460px]"
+          >
+            <div class="space-y-4">
+              <!-- Window Controls -->
+              <div class="flex items-center gap-2 pb-2 border-b border-white/5">
+                <span class="w-3 h-3 rounded-full bg-[#ff5f56]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#ffbd2e]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#27c93f]"></span>
+                <span class="ml-2 text-xs text-on-surface-variant/40"
+                  >bash --secure-transmission</span
+                >
+              </div>
+              <div class="space-y-2">
+                <p class="text-on-surface-variant/60">
+                  # Contact routes initialized...
+                </p>
+                <p class="text-[#cf5cff]">$ contact --profile praise_otuka</p>
+                <p class="text-secondary">Resolving endpoints...</p>
+                <p class="text-primary-fixed-dim">✓ Routes authenticated</p>
+              </div>
+              <div class="space-y-2 pt-2">
+                <p class="text-on-surface-variant/60">
+                  # Available contact vectors
+                </p>
+                <div class="space-y-2">
+                  <p class="flex items-center gap-2">
+                    <span class="text-secondary">email</span>
+                    <span class="text-primary-fixed-dim"
+                      >praiseotuka18@gmail.com</span
+                    >
+                  </p>
+                  <p class="flex items-center gap-2">
+                    <span class="text-secondary">tel_1</span>
+                    <span class="text-on-surface-variant">0701 892 0195</span>
+                  </p>
+                  <p class="flex items-center gap-2">
+                    <span class="text-secondary">tel_2</span>
+                    <span class="text-on-surface-variant">08115729345</span>
+                  </p>
+                  <p class="flex items-center gap-2">
+                    <span class="text-secondary">github</span>
+                    <a
+                      href="https://github.com/praisegirl151"
+                      target="_blank"
+                      class="text-primary-fixed-dim hover:underline"
+                      >praisegirl151</a
+                    >
+                  </p>
+                  <p class="flex items-center gap-2">
+                    <span class="text-secondary">linkedin</span>
+                    <a
+                      href="https://www.linkedin.com/in/praise-otuka-619602315/"
+                      target="_blank"
+                      class="text-primary-fixed-dim hover:underline"
+                      >praise-otuka</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="pt-4 border-t border-white/5 text-xs text-on-surface-variant/50 flex items-center justify-between"
+            >
+              <span>SOCKET_SECURE</span>
+              <span class="status-indicator"></span>
+            </div>
+          </div>
+
+          <!-- Right Column: Frosted Form -->
+          <div
+            class="md:col-span-7 glass-panel p-8 rounded-xl border border-[var(--terminal-border)] flex flex-col justify-between"
+          >
+            <div>
+              <h2
+                class="font-headline-md text-headline-md text-on-surface text-center mb-2"
+              >
+                INITIATE_CONTACT
+              </h2>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant text-center mb-8"
+              >
+                Ready to collaborate? Send a secure transmission.
+              </p>
+              <form id="contact-form" class="space-y-6">
+                <!-- Web3Forms hidden config -->
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="8becfb63-f1dc-470c-93f1-b2d62c2ca3a7"
+                />
+                <input
+                  type="hidden"
+                  name="subject"
+                  value="New Portfolio Message — Praise Otuka"
+                />
+                <input
+                  type="hidden"
+                  name="from_name"
+                  value="Praise Otuka Portfolio"
+                />
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  class="hidden"
+                  style="display: none"
+                />
+                <div class="space-y-2">
+                  <label
+                    class="font-label-caps text-label-caps text-on-surface-variant px-2"
+                    for="contact-name"
+                    >SUBJECT_IDENTITY</label
+                  >
+                  <input
+                    id="contact-name"
+                    name="name"
+                    class="w-full frosted-input rounded-md border-none text-on-surface placeholder:text-outline/40 transition-all h-14 px-6"
+                    placeholder="Your Name"
+                    type="text"
+                  />
+                </div>
+                <div class="space-y-2">
+                  <label
+                    class="font-label-caps text-label-caps text-on-surface-variant px-2"
+                    for="contact-email"
+                    >CONTACT_VECTOR</label
+                  >
+                  <input
+                    id="contact-email"
+                    name="email"
+                    class="w-full frosted-input rounded-md border-none text-on-surface placeholder:text-outline/40 transition-all h-14 px-6"
+                    placeholder="Email Address"
+                    type="email"
+                  />
+                </div>
+                <div class="space-y-2">
+                  <label
+                    class="font-label-caps text-label-caps text-on-surface-variant px-2"
+                    for="contact-message"
+                    >MESSAGE_DATA</label
+                  >
+                  <textarea
+                    id="contact-message"
+                    name="body"
+                    class="w-full frosted-input rounded-md border-none text-on-surface placeholder:text-outline/40 transition-all p-6"
+                    placeholder="Describe your project requirements..."
+                    rows="4"
+                  ></textarea>
+                </div>
+                <button
+                  class="w-full btn-primary transition-all h-14 rounded-lg font-label-caps text-label-caps text-primary-fixed-dim tracking-widest flex items-center justify-center gap-3 active:scale-95 group"
+                  type="submit"
+                  id="send-btn"
+                >
+                  SEND_MESSAGE
+                  <span
+                    class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform"
+                    >send</span
+                  >
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="w-full rounded-t-xl bg-white/3 dark:bg-white/3 backdrop-blur-xl border-t border-[var(--terminal-border)] shadow-[0_-8px_32px_0_rgba(0,0,0,0.3)]"
+    >
+      <div
+        class="flex flex-col items-center px-gutter pt-12 pb-24 md:pb-12 max-w-container-max mx-auto space-y-8"
+      >
+        <div
+          class="font-headline-md text-headline-md text-primary-fixed-dim font-bold tracking-tighter"
+        >
+          PRAISE_OTUKA
+        </div>
+        <div class="flex gap-8">
+          <a
+            class="material-symbols-outlined text-on-tertiary-fixed-variant hover:text-secondary-fixed hover:drop-shadow-[0_0_15px_rgba(236,178,255,0.6)] transition-all"
+            href="https://github.com/praisegirl151"
+            target="_blank"
+            rel="noopener"
+            title="GitHub"
+            >code</a
+          >
+          <a
+            class="material-symbols-outlined text-on-tertiary-fixed-variant hover:text-secondary-fixed hover:drop-shadow-[0_0_15px_rgba(236,178,255,0.6)] transition-all"
+            href="https://www.linkedin.com/in/praise-otuka-619602315/"
+            target="_blank"
+            rel="noopener"
+            title="LinkedIn"
+            >share</a
+          >
+          <a
+            class="material-symbols-outlined text-on-tertiary-fixed-variant hover:text-secondary-fixed hover:drop-shadow-[0_0_15px_rgba(236,178,255,0.6)] transition-all"
+            href="#contact"
+            title="Email"
+            >alternate_email</a
+          >
+          <a
+            class="material-symbols-outlined text-on-tertiary-fixed-variant hover:text-secondary-fixed hover:drop-shadow-[0_0_15px_rgba(236,178,255,0.6)] transition-all"
+            href="tel:+2347018920195"
+            title="Call"
+            >call</a
+          >
+        </div>
+        <div
+          class="font-label-caps text-label-caps text-on-tertiary-fixed-variant"
+        >
+          © 2025 PRAISE OTUKA. ALL RIGHTS RESERVED.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bottom Navigation Bar (Mobile) -->
+    <nav
+      class="fixed bottom-0 left-0 w-full glass-panel z-50 md:hidden flex justify-around items-center h-16 border-t border-white/5 px-6"
+    >
+      <a href="#hero" class="flex flex-col items-center text-primary-fixed-dim">
+        <span class="material-symbols-outlined">home</span>
+        <span class="text-[10px] font-label-caps">HOME</span>
+      </a>
+      <a
+        href="#projects"
+        class="flex flex-col items-center text-on-surface-variant hover:text-primary-fixed-dim transition-colors"
+      >
+        <span class="material-symbols-outlined">folder_special</span>
+        <span class="text-[10px] font-label-caps">PROJECTS</span>
+      </a>
+      <a
+        href="#skills"
+        class="flex flex-col items-center text-on-surface-variant hover:text-primary-fixed-dim transition-colors"
+      >
+        <span class="material-symbols-outlined">psychology</span>
+        <span class="text-[10px] font-label-caps">SKILLS</span>
+      </a>
+      <a
+        href="#contact"
+        class="flex flex-col items-center text-on-surface-variant hover:text-primary-fixed-dim transition-colors"
+      >
+        <span class="material-symbols-outlined">mail</span>
+        <span class="text-[10px] font-label-caps">CONTACT</span>
+      </a>
+    </nav>
+
+    <script>
+      // Theme Toggle Logic
+      const themeToggle = document.getElementById("theme-toggle");
+      const htmlElement = document.documentElement;
+
+      // Load preference
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        htmlElement.classList.add("dark");
+        themeToggle.textContent = "light_mode";
+      } else {
+        htmlElement.classList.remove("dark");
+        themeToggle.textContent = "dark_mode";
+      }
+
+      themeToggle.addEventListener("click", () => {
+        htmlElement.classList.toggle("dark");
+        if (htmlElement.classList.contains("dark")) {
+          localStorage.theme = "dark";
+          themeToggle.textContent = "light_mode";
+        } else {
+          localStorage.theme = "light";
+          themeToggle.textContent = "dark_mode";
+        }
+      });
+
+      // Mobile menu toggle
+
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        mobileMenuBtn.textContent = mobileMenu.classList.contains("hidden")
+          ? "menu"
+          : "close";
+      });
+      function closeMobileMenu() {
+        mobileMenu.classList.add("hidden");
+        mobileMenuBtn.textContent = "menu";
+      }
+
+      // Education / Certs tab switcher
+      function switchTab(tab) {
+        const educationPanel = document.getElementById("panel-education");
+        const certsPanel = document.getElementById("panel-certs");
+        const tabEducation = document.getElementById("tab-education");
+        const tabCerts = document.getElementById("tab-certs");
+
+        if (tab === "education") {
+          educationPanel.classList.remove("hidden");
+          certsPanel.classList.add("hidden");
+          tabEducation.classList.add("active-tab");
+          tabEducation.classList.remove("text-on-surface-variant");
+          tabCerts.classList.remove("active-tab");
+          tabCerts.classList.add("text-on-surface-variant");
+        } else {
+          certsPanel.classList.remove("hidden");
+          educationPanel.classList.add("hidden");
+          tabCerts.classList.add("active-tab");
+          tabCerts.classList.remove("text-on-surface-variant");
+          tabEducation.classList.remove("active-tab");
+          tabEducation.classList.add("text-on-surface-variant");
+        }
+      }
+
+      // Contact form — real email delivery via Web3Forms
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+          const btn = document.getElementById("send-btn");
+          const form = e.target;
+          const originalContent = btn.innerHTML;
+
+          // Validate fields
+          const name = form.querySelector("#contact-name").value.trim();
+          const email = form.querySelector("#contact-email").value.trim();
+          const message = form.querySelector("#contact-message").value.trim();
+          if (!name || !email || !message) {
+            btn.innerHTML = "⚠ FILL ALL FIELDS";
+            btn.classList.add("text-error");
+            setTimeout(() => {
+              btn.innerHTML = originalContent;
+              btn.classList.remove("text-error");
+            }, 2000);
+            return;
+          }
+
+          // Transmitting state
+          btn.innerHTML = '<span class="animate-pulse">TRANSMITTING...</span>';
+          btn.disabled = true;
+          btn.classList.add("neomorph-sunken");
+
+          try {
+            const data = new FormData(form);
+            const response = await fetch("https://api.web3forms.com/submit", {
+              method: "POST",
+              body: data,
+            });
+            const result = await response.json();
+
+            if (result.success) {
+              btn.innerHTML = "✓ MESSAGE_SENT";
+              btn.classList.remove("neomorph-sunken");
+              btn.classList.add("text-secondary");
+              form.reset();
+              setTimeout(() => {
+                btn.innerHTML = originalContent;
+                btn.classList.remove("text-secondary");
+                btn.disabled = false;
+              }, 3000);
+            } else {
+              throw new Error(result.message || "Submission failed");
+            }
+          } catch (err) {
+            btn.innerHTML = "✗ TRANSMISSION_FAILED";
+            btn.classList.remove("neomorph-sunken");
+            btn.classList.add("text-error");
+            setTimeout(() => {
+              btn.innerHTML = originalContent;
+              btn.classList.remove("text-error");
+              btn.disabled = false;
+            }, 3000);
+            console.error("Form error:", err);
+          }
+        });
+
+      // Scroll reveal for cards
+      const observerOptions = { threshold: 0.1 };
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      document
+        .querySelectorAll(
+          ".tactile-card, .glass-panel, .btn-primary, .btn-secondary",
+        )
+        .forEach((el) => {
+          el.style.opacity = "0";
+          el.style.transform = "translateY(20px)";
+          el.style.transition = "all 0.6s cubic-bezier(0.22, 1, 0.36, 1)";
+          observer.observe(el);
+        });
+    </script>
+  </body>
+</html>
