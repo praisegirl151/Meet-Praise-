@@ -9,20 +9,35 @@
       name="description"
       content="Portfolio of Otuka Praise Chimnaemeiheukwu — Full-Stack Software Engineer, Graphics Designer, Mobile Photographer and Video Editor. Building scalable web apps with Python (Django) and modern JavaScript."
     />
-    <meta name="keywords" content="Praise Otuka, Full-Stack Engineer, Django Developer, JavaScript Developer, Software Engineer Nigeria, Web Developer, Portfolio, Backend Developer, Tech" />
+    <meta
+      name="keywords"
+      content="Praise Otuka, Full-Stack Engineer, Django Developer, JavaScript Developer, Software Engineer Nigeria, Web Developer, Portfolio, Backend Developer, Tech"
+    />
     <meta name="author" content="Praise Otuka" />
     <meta name="robots" content="index, follow" />
 
     <!-- Open Graph / Facebook / LinkedIn -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="PRAISE OTUKA | Full-Stack Engineer & Creative" />
-    <meta property="og:description" content="Portfolio of Otuka Praise Chimnaemeiheukwu — Full-Stack Software Engineer, Graphics Designer, Mobile Photographer and Video Editor. Building scalable web apps with Python (Django) and modern JavaScript." />
+    <meta
+      property="og:title"
+      content="PRAISE OTUKA | Full-Stack Engineer & Creative"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio of Otuka Praise Chimnaemeiheukwu — Full-Stack Software Engineer, Graphics Designer, Mobile Photographer and Video Editor. Building scalable web apps with Python (Django) and modern JavaScript."
+    />
     <meta property="og:image" content="./praise-photo.png" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="PRAISE OTUKA | Full-Stack Engineer & Creative" />
-    <meta name="twitter:description" content="Portfolio of Otuka Praise Chimnaemeiheukwu — Full-Stack Software Engineer, Graphics Designer, Mobile Photographer and Video Editor." />
+    <meta
+      name="twitter:title"
+      content="PRAISE OTUKA | Full-Stack Engineer & Creative"
+    />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Otuka Praise Chimnaemeiheukwu — Full-Stack Software Engineer, Graphics Designer, Mobile Photographer and Video Editor."
+    />
     <meta name="twitter:image" content="./praise-photo.png" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
@@ -1085,8 +1100,7 @@
               <div
                 class="absolute top-4 right-4 bg-black/80 backdrop-blur-md px-3 py-1 rounded-full border border-white/20 z-10"
               >
-                <span
-                  class="font-label-code text-label-caps text-white"
+                <span class="font-label-code text-label-caps text-white"
                   >2024</span
                 >
               </div>
@@ -1517,7 +1531,7 @@
 
           <!-- IT Specialist -->
           <a
-            href="https://drive.google.com/file/d/1WkleHts_oyj43RM8f2J1KPDiuoC3ht29/view?usp=sharing"
+            href="https://drive.google.com/file/d/1SAg5bwl1Y2XqOKRcxES2j8PdMU0AntkC/view?usp=drive_link"
             target="_blank"
             rel="noopener"
             class="cert-badge flex items-start gap-4 glass-panel p-5 rounded-xl border border-[var(--terminal-border)] hover:bg-white/5 transition-all group block"
@@ -2071,11 +2085,7 @@
       const htmlElement = document.documentElement;
 
       // Load preference
-      if (
-        localStorage.theme === "dark" ||
-        (!("theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
+      if (localStorage.theme === "dark" || !("theme" in localStorage)) {
         htmlElement.classList.add("dark");
         themeToggle.textContent = "light_mode";
       } else {
